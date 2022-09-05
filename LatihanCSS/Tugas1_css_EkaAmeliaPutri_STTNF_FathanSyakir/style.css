@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(142, 167, 188);
+}
+
+legend{
+    padding:10px; /* all padding */
+	background-color:rgb(11, 103, 232);
+	color:rgb(224, 210, 210);
+	font-weight:bold;
+	font-size:14pt;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+
+p{
+	color:#924c06;
+	text-align:justify;
+	font-family:calibri, verdana, comic sans, tahoma;
+	font-size:12pt;
+}
+
+h1 {
+	color:#924c06;
+	font-family:calibri, verdana, comic sans, tahoma;
+}
+
+hr {
+	border-color: RosyBrown;
+	border-width: 3px;
+}
+
+fieldset, legend{
+	border:RosyBrown groove 5px;	
+}
+
+ol, ul, li {
+	color: #924c06;
+}
+
+ol { 
+	list-style-image: url("images/musik.gif"); 
+} 
+ul { 
+	list-style-image: url("images/nyanyi.gif"); 
+} 

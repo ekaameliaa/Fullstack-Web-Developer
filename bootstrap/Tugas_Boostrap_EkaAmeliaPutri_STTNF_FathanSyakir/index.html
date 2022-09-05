@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tugas membuat Layout Web dengan Bootstrap 5</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/1.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/3.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/2.png" class="d-block w-100" alt="...">
+				</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+				<div class="container-fluid">
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<a class="navbar-brand" href="#">Echa Library</a>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link disabled">Contact Us</a>
+					  </li>
+					</ul>
+					<form class="d-flex" role="search">
+					  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					  <button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				  </div>
+				</div>
+			  </nav>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-3">
+			<ul class="list-group">
+				<li class="list-group-item active" aria-current="true">Information about Echa Library</li>
+				<li class="list-group-item"><i class="bi-postcard"></i> Katalog</li>
+				<li class="list-group-item"><i class="bi-display"></i> Koleksi Digital</li>
+				<li class="list-group-item"><i class="bi-image"></i> Galery</li>
+				<li class="list-group-item"><i class="bi-people"></i> Jumlah Pengunjung Harian</li>
+			  </ul>
+		</div>
+		<br>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-body">
+					<div class="jumbotron">
+						<h5 class="card-title" align="center"><b>Selamat Datang di Echa Library</b></h5>
+						<img src="images/buku1.png" width="100%" height="400px" alt="">
+						<p align="justify">Echa Library adalah aplikasi perpustakaan yang diluncurkan oleh Perpustakaan Nasional Republik Indonesia dan bekerja sama dengan 
+							pengembang Aksarama. Selain fitur standar perpustakaan seperti peminjaman buku, iPusnas memiliki fitur sosial media yang dapat digunakan 
+							untuk berinteraksi dengan anggota perpustakaan lain. Fitur lain yang tersedia adalah ePustaka yang memungkinkan anda untuk 
+							menjadi anggota dari berbagai perpustakaan berbeda sekaligus.</p>
+						<p align="justify">Echa Library juga menyediakan fitur katalog untuk melihat daftar buku yang ada, koleksi digital untuk mengetahui buku digital 
+							yag tersedia, dan juga ada fitu Galery.
+		
+							Di Echa Library, anda dapat membaca buku dengan kategori fiksi seperti cerpen dan novel, serta non-fiksi seperti buku-buku 
+							tentang metode penelitian, manajemen pemasaran dan sebagainya. Tidak hanya itu saja, buku pelajaran SD, SMP dan SMA juga 
+							tersedia di sini, sehingga cocok untuk program pembelajaran siswa.</p>
+						<a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
+					  </div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="col-md-3">
+			<div class="card" style="width: 18rem;">
+				<img src="images/buku2.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title"><b>Review Buku You Do You</b></h5>
+				  <p class="card-text" align="justify">Jujur, setelah membaca You Do You, it felt like I have soooo much more to write here. Again, lagi-lagi 
+					saya harus bersyukur dipertemukan dengan sebuah karya menarik karena semua yang ditulis sangat-sangat penting (I can guarantee
+					 that) untuk siapa pun yang saat ini masih bertanya-tanya soal passion, karier, bingung soal ikigai, keuangan, dan segala 
+					 kegalauan lain yang sering dialami anak muda.</p>
+				</div>
+				<div class="card-body">
+					<a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
+				</div>
+			  </div>
+		</div>
+		<br>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="alert alert-primary" role="alert">
+				Design by Ekaameliaa@2022 Kampus Merdeka
+			  </div>
+		</div>
+	</div>
+</div>
+	<script src="js/popper.min.js"></script>	
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
