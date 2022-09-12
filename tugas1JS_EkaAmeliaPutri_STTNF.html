@@ -1,0 +1,55 @@
+<script language="javascript">
+/*
+Diketahui:
+pegawai: Ridwan
+jabatan: manager
+status: menikah 
+Tugas: 
+Cetak Data Pegawai berbentuk tabel:
+Judul Kolom gunakan thead
+Data2 gunakan tbody 
+Nama Pegawai, Jabatan, Status, 
+Gaji Pokok(if): Manager=>15 jt, Asisten Manager=>10 jt, Staff=>5 jt 
+Tunjangan Jabatan: 15% dari gapok
+BPJS: 10% dari gapok
+Tunjangan Keluarga (ternary): dilihat dari status yg sudah menikah =>20% dari gapok
+Total Gaji: jumlahlahkan seluruh element gaji (gunakan tfoot)
+Format pengumpulan tugas:
+Disimpan di githubnya masing2:
+contoh:
+buat repo baru (javascript) -> file tugas di push di repo tsb
+lalu linknya dlm txt di assign ke LMS
+*/
+var pegawai = "Ridwan";
+var jabatan = "Manager";
+var status = "Menikah";
+var gaji_pokok = jabatan;
+if ( gaji_pokok == "Manager"){
+    gapok = 15000000;
+}
+else if(gaji_pokok == "Asisten Manager"){
+    gapok = 10000000;
+}
+else if(gaji_pokok == "Staff"){
+    gapok = 5000000;
+}
+else {
+    gapok = 0;
+}
+
+let tunjangan = 0.15 * gapok;
+let BPJS = 0.1 * gapok;
+let tunjangan_keluarga = ( status == "Menikah") ? 0.2 * gapok : 0;
+let total = gapok + tunjangan + BPJS + tunjangan_keluarga;
+
+document.write("<table border='1' align='center' cellspacing='0' cellpadding='10' width='30%'>" + "<thead>" + "<tr>" + 
+    "<th colspan='2'> Data Pegawai" + "</th>" + "</tr>" + "</thead>" +
+    "<tbody>" + "<tr>" + "<td> Pegawai" + "</td>" + "<td>" + pegawai + "</td>" + "</tr>" + 
+    "<tr>" + "<td>Jabatan" + "</td>" + "<td>" + jabatan + "</td>" + "</tr>" + 
+    "<tr>" + "<td>Status" + "</td>" + "<td>" + status + "</td>" + "</tr>" +
+    "<tr>" + "<td>Gaji Pokok" + "</td>" + "<td>" + gapok + "</td>" + "</tr>" +
+    "<tr>" + "<td>Tunjangan Jabatan" + "</td>" + "<td>" + tunjangan + "</td>" + "</tr>" +
+    "<tr>" + "<td>BPJS" + "</td>" + "<td>" + BPJS + "</td>" + "</tr>" +
+    "<tr>" + "<td>Tunjangan Keluarga" + "</td>" + "<td>" + tunjangan_keluarga + "</td>" + "</tr>" + "</tbody>" + 
+    "<tfoot>" + "<tr>" + "<th>Total Gaji" + "</th>" + "<th>" + total + "</th>" + "</tr>" + "</tfoot>" + "</table>");
+</script>
