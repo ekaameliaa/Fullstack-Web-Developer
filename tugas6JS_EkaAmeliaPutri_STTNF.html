@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas6JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h3 align="center">Data Info Gempa</h3>
+    <table class="table">
+        <thead class="thead-info">
+            <tr>
+            <th scope="col">No</th>
+            <th scope="col">Lokasi</th>
+            <th scope="col">Skala</th>
+            <th scope="col">Dampak</th>
+            </tr>
+        </thead>
+        <script>
+            class Gempa{
+                constructor(lokasi, skala){
+                    this.lokasi = lokasi;
+                    this.skala = skala;
+                }
+        
+                getDampak(){
+                    if (this.skala <= 2){
+                        this.dampak = "Tidak Terasa";
+                    }
+                    else if (this.skala > 2 && this.skala <= 4){
+                        this.dampak = "Bangunan Retak-Retak"
+                    }
+                    else if (this.skala > 4 && this.skala <= 6){
+                        this.dampak = "Bangunan Roboh"
+                    }
+                    else {
+                        this.dampak = "Bangunan roboh dan berpotensi tsunami"
+                    }
+        
+                    return this.dampak;
+                }
+        
+                infoGempa(){
+                    this.no = 1;
+                    document.write(`
+                            <tr>
+                                <th scope="row">${this.no++}</th>
+                                <td>${this.lokasi}</td>
+                                <td>${this.skala}</td>
+                                <td>${this.getDampak()}</td>
+                            </tr>`)
+                }
+            }
+            g1 = new Gempa('Jakarta', 3);
+            g2 = new Gempa('Bandung', 7);
+            g3 = new Gempa('Yogyakarta', 1);
+        
+            let data = [g1, g2, g3];
+            for(let g in data){
+                data[g].infoGempa();
+            }
+        </script>
+        </table>
+</body>
+</html>
